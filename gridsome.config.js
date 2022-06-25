@@ -1,9 +1,9 @@
 module.exports = {
-  siteName: 'A blog starter for Gridsome',
-  siteDescription: "Bleda is a blog starter kit for Gridsome, the Vue.js static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
-  siteUrl: 'localhost:8080',
-  titleTemplate: `%s | Bleda`,
-  icon: 'src/favicon.png',
+  siteName: 'Code Can Fly Website',
+  siteDescription: "Code Can Fly",
+  siteUrl: 'codecandfly.com',
+  titleTemplate: `%s | Code Can Fly`,
+  icon: '/static/logo/favicons/favicon.ico',
 
   transformers: {
     remark: {
@@ -41,34 +41,34 @@ module.exports = {
         id: 'UA-135446199-1',
       },
     },
-    {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-        cacheTime: 600000, // default
-      },
-    },
-    {
-      use: 'gridsome-plugin-rss',
-      options: {
-        contentTypeName: 'Post',
-        feedOptions: {
-          title: 'Bleda, a Gridsome blog starter',
-          feed_url: 'https://gridsome-starter-bleda.netlify.com/feed.xml',
-          site_url: 'https://gridsome-starter-bleda.netlify.com',
-        },
-        feedItemOptions: node => ({
-          title: node.title,
-          description: node.description,
-          url: 'https://gridsome-starter-bleda.netlify.com' + node.path,
-          author: node.author,
-          date: node.date,
-        }),
-        output: {
-          dir: './static',
-          name: 'feed.xml',
-        },
-      },
-    },
+    // {
+    //   use: '@gridsome/plugin-sitemap',
+    //   options: {
+    //     cacheTime: 600000, // default
+    //   },
+    // },
+    // {
+    //   use: 'gridsome-plugin-rss',
+    //   options: {
+    //     contentTypeName: 'Post',
+    //     feedOptions: {
+    //       title: 'Bleda, a Gridsome blog starter',
+    //       feed_url: 'https://gridsome-starter-bleda.netlify.com/feed.xml',
+    //       site_url: 'https://gridsome-starter-bleda.netlify.com',
+    //     },
+    //     feedItemOptions: node => ({
+    //       title: node.title,
+    //       description: node.description,
+    //       url: 'https://gridsome-starter-bleda.netlify.com' + node.path,
+    //       author: node.author,
+    //       date: node.date,
+    //     }),
+    //     output: {
+    //       dir: './static',
+    //       name: 'feed.xml',
+    //     },
+    //   },
+    // },
   ],
 
   templates: {
