@@ -10,7 +10,7 @@
       <section>
         <!-- <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" /> -->
       </section>
-      <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1" />
+      <!-- <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1" /> -->
       <!-- <site-footer class="py-8 sm:py-16" /> -->
     </main>
   </Layout>
